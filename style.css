@@ -1,0 +1,94 @@
+* { box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: yellow;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 1000px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: gray;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  color: rgb(255, 240, 36);
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.toggle-button {
+  position: absolute;
+  bottom: .75rem;
+  left: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 15px; 
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 80%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+@media (max-width: 734px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
