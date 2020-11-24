@@ -1,21 +1,90 @@
 * { box-sizing: border-box;
 }
 
-body {
-  margin-top: 0;
+ body, #slider, .wrap, .slide-content {
+  margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* .wrap { */
+  /* position: fixed; */
+/* } */
+/*  */
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("Gogi.png")
+}
+
+.slide2 {
+  background-image: url("MusselsSkillet.png")
+}
+
+.slide3 {
+  background-image: url("ServerHoldingCandles.jpg")
+}
+
+.slide4 {
+  background-image: url("MesaCocktail.png")
+}
+
+.slide5 {
+  background-image: url("MESA-81.jpg")
+}
+
+
+.slide-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 9;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 15px 20px 15px 0;
+  left: 0;
+  border-color: transparent rgb(235, 229, 229) transparent transparent;
+  margin-left: 20px;
+  opacity: .5;
+}
+
+#arrow-right {
+  border-width: 15px 0px 15px 20px;
+  border-color: transparent transparent transparent rgb(235, 229, 229); 
+  right: 0;
+  margin-right: 20px;
+  opacity: .5;
 }
 
 .navbar {
   display: flex;
+  width: 100%;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  color: yellow;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  position: fixed;
-  bottom: 0;
+  top: 0;
 }
 
 .logo {
@@ -49,7 +118,7 @@ body {
 .toggle-button {
   position: absolute;
   bottom: .75rem;
-  left: 1rem;
+  right: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -65,6 +134,11 @@ body {
 }
 
 @media (max-width: 734px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .toggle-button {
     display: flex;
   }
@@ -74,17 +148,12 @@ body {
     width: 100%;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
   }
 
-  .navbar-links li a {
+  .navbar-links ul li a {
     padding: .5rem 1rem;
   }
 
@@ -92,3 +161,16 @@ body {
     display: flex;
   }
 }
+
+.slideshow-container {
+  max-width: 1000%;
+  margin: auto;
+  height: auto;
+}
+
+.mySlides {
+  display: none; 
+}
+
+
+
