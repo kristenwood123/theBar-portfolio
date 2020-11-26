@@ -1,0 +1,153 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-image: url("images/Gogi.png");
+  background-size: auto;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg {
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  top: 0;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 3000px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: gray;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  color: rgb(255, 240, 36);
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  background-color: rgb(0,0,0,0.7);
+  flex-direction: column;
+  margin: 2em 2em 2em 2em;
+  margin: 0 auto;
+}
+
+.container p {
+  line-height: 3em;
+}
+
+.box-1 {
+  width: 90%;
+  align-self: center;
+}
+
+.box-2 {
+  width: 90%;
+  align-self: center;
+}
+
+.box-3 {
+  width: 90%;
+  align-self: center;
+}
+
+.box-4{ 
+  width: 90%;
+  align-self: center;
+}
+
+.box-5{ 
+  width: 90%;
+  align-self: center;
+}
+
+.box-6{ 
+  width: 90%;
+  align-self: center;
+}
+
+.box-7{ 
+  width: 90%;
+  align-self: center;
+}
+
+.box-6 a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+.box-6 a:hover {
+  color: rgb(97, 96, 96);
+}
+
+.box-7 a {
+  text-decoration: none;
+  color:gray;
+  cursor: pointer;
+}
+
+.box-7 a:hover {
+ color: rgb(97, 96, 96)
+}
+
+.tree {
+  max-width: 200px;
+}
+
+@media screen and (min-width: 640px) {
+  .tree {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .tree {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+

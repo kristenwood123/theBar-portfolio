@@ -21,6 +21,7 @@ function reset() {
 function startSlideshow() {
   reset()
   sliderImages[0].style.display ='block'
+  
 }
 
 //show next
@@ -57,6 +58,23 @@ startSlideshow();
 
 
 
+var slideIndex = 0;
+
+
+carousel();
+sliderImages[slideIndex].style.opacity = 1;
+function carousel() {
+  let i;
+  
+
+  for (i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > sliderImages.length) {slideIndex = 1}
+  sliderImages[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 3s seconds
+}
 
 
 

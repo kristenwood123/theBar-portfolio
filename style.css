@@ -9,11 +9,6 @@
   overflow-x: hidden;
 }
 
-/* .wrap { */
-  /* position: fixed; */
-/* } */
-/*  */
-
 .slide {
   background-size: cover;
   background-position: center;
@@ -21,23 +16,24 @@
 }
 
 .slide1 {
-  background-image: url("Gogi.png")
+  background-image: url("images/Gogi.png");
+  
 }
 
 .slide2 {
-  background-image: url("MusselsSkillet.png")
+  background-image: url("images/MusselsSkillet.png");
 }
 
 .slide3 {
-  background-image: url("ServerHoldingCandles.jpg")
+  background-image: url("images/ServerHoldingCandles.jpg");
 }
 
 .slide4 {
-  background-image: url("MesaCocktail.png")
+  background-image: url("images/MesaCocktail.png");
 }
 
 .slide5 {
-  background-image: url("MESA-81.jpg")
+  background-image: url("images/MESA-81.jpg");
 }
 
 
@@ -95,7 +91,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 1000px;
+  margin-right: 2000px;
 }
 
 .navbar-links li {
@@ -132,6 +128,7 @@
   background-color: gray;
   border-radius: 10px;
 }
+
 
 @media (max-width: 734px) {
   .navbar {
