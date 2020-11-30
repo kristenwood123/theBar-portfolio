@@ -15,6 +15,7 @@
   background-repeat: no-repeat;
 }
 
+
 .slide1 {
   background-image: url("images/Gogi.png");
   
@@ -113,7 +114,7 @@
 
 .toggle-button {
   position: absolute;
-  bottom: .75rem;
+  top: .75rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -128,7 +129,6 @@
   background-color: gray;
   border-radius: 10px;
 }
-
 
 @media (max-width: 734px) {
   .navbar {
@@ -145,12 +145,17 @@
     width: 100%;
   }
 
+  .navbar-links li {
+    text-align: center;
+    padding: 0em 1em 0em 0em;
+  }
+  
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
   }
 
-  .navbar-links ul li a {
+  .navbar-links li a {
     padding: .5rem 1rem;
   }
 
