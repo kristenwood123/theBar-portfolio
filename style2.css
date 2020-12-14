@@ -110,7 +110,7 @@ body {
 .container {
   display: flex;
   width: 80%;
-  background-color: rgb(0,0,0,0.8);
+  background-color: rgb(0,0,0,0.9);
   flex-direction: column;
   margin: 2em 2em 2em 2em;
   margin: 0 auto;
